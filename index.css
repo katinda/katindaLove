@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(120deg, #fff0f5, #ffe1cc); /* Dégradé rose-orangé doux */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  /* Conteneur principal */
+  .container {
+    text-align: center;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(255, 105, 180, 0.3); /* Ombre rose */
+    max-width: 700px;
+    width: 90%;
+    position: relative;
+  }
+  
+  /* Titre */
+  h1 {
+    font-family: 'Parisienne', cursive; /* Police romantique */
+    font-size: 3em;
+    color: #ff5e62; /* Rouge passion */
+    margin-bottom: 10px;
+  }
+  
+  .subtitle {
+    font-size: 1.2em;
+    color: #ff8c94; /* Rose tendre */
+    margin-bottom: 20px;
+  }
+  
+  /* Animation cœur */
+  .heart-animation {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 40px;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23ff5e62"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>') no-repeat center;
+    background-size: contain;
+    animation: pulse 2s infinite;
+  }
+  
+  @keyframes pulse {
+    0% { transform: translateX(-50%) scale(1); }
+    50% { transform: translateX(-50%) scale(1.2); }
+    100% { transform: translateX(-50%) scale(1); }
+  }
+  
+  /* Carte de la question */
+  .question-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    border: 2px dashed #ffb6c1; /* Bordure en pointillés rose */
+    margin-bottom: 25px;
+    transition: all 0.3s ease;
+  }
+  
+  .question-card:hover {
+    transform: scale(1.02);
+  }
+  
+  #random-question {
+    font-size: 1.4em;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  #category-theme {
+    display: inline-block;
+    font-size: 1em;
+    font-style: italic;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 20px;
+    background: #ff5e62; /* Couleur par défaut */
+  }
+  
+  /* Bouton */
+  button {
+    background: #ff5e62;
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1.2em;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    background: #ff3d4f;
+    transform: translateY(-2px);
+  }
+  
+  /* Couleurs par thème */
+  .theme-vie-en-couple { background: #ff9999; } /* Rose doux */
+  .theme-mariage { background: #ffb6c1; } /* Rose pâle */
+  .theme-éducation-des-enfants { background: #b0e57c; } /* Vert tendre */
+  .theme-voyages { background: #87cefa; } /* Bleu léger */
+  .theme-soft { background: #fffacd; } /* Jaune citron doux */
+  .theme-normal { background: #dda0dd; } /* Prune pastel */
+  .theme-hard { background: #ff4500; } /* Orange audacieux */
+  
+  /* Responsivité */
+  @media (max-width: 500px) {
+    h1 { font-size: 2.2em; }
+    .question-card { padding: 15px; }
+    #random-question { font-size: 1.2em; }
+    button { padding: 10px 20px; font-size: 1em; }
+  }
