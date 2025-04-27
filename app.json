@@ -223,7 +223,8 @@
           "Préféres-tu lire ou écouter des livres audio ?",
           "Quel est ton film préféré à regarder quand tu es triste ?",
           "Quel est le dernier livre que tu as lu ?",
-          "Si tu pouvais rencontrer un personnage fictif, qui serait-ce ?"
+          "Si tu pouvais rencontrer un personnage fictif, qui serait-ce ?",
+          "Qui sont les personnes qui t'inspire le plus dans ta vie ? "
       ],
       "Enfance": [
           "As-tu gardé des souvenirs d'enfance ?",
@@ -421,7 +422,9 @@
           "Il y a t-il eu de la violence avec tes anciens partenaires ? ",
           "Pourquoi tes relations se sont terminé", 
           "Comment ferais tu pour que tes futurs relations se passent bien ?",
-          "As-tu déja trompé"
+          "As-tu déja trompé ?",
+          "Qu'est ce qui te met bien peu importe la situation ?",
+          "C'etait quand le moment où tu as compris que j'étais dans ta tête ?"
       ],
     "Passé et Limites": [
       "As-tu un passé sombre ?",
